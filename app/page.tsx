@@ -58,15 +58,18 @@ export default function HomePage() {
 
           <aside className="rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-sm">
             <div className="rounded-md border border-slate-200 bg-white p-6">
-              <div className="mb-6 flex items-center gap-4">
+              <div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-center">
                 <img
                   src={site.avatar}
                   alt="Suhui Wu profile portrait"
-                  className="h-24 w-24 rounded-md border border-slate-200 object-cover object-top shadow-sm"
+                  className="h-36 w-36 rounded-md border border-slate-200 object-cover object-top shadow-sm sm:h-40 sm:w-40"
                 />
                 <div>
-                  <p className="text-lg font-semibold text-ink">{site.name}</p>
-                  <p className="mt-1 text-sm text-slate-500">PhD student</p>
+                  <p className="text-xl font-semibold text-ink">{site.name}</p>
+                  <p className="mt-1 text-sm font-medium text-ocean">PhD student</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-500">
+                    Polar cryosphere and hydrological remote sensing
+                  </p>
                 </div>
               </div>
               <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ocean/70">
