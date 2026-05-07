@@ -62,7 +62,7 @@ export default function HomePage() {
                 <img
                   src={site.avatar}
                   alt="Suhui Wu profile portrait"
-                  className="h-36 w-36 rounded-md border border-slate-200 object-cover object-top shadow-sm sm:h-40 sm:w-40"
+                  className="h-44 w-44 rounded-md border border-slate-200 object-cover object-top shadow-sm sm:h-52 sm:w-52"
                 />
                 <div>
                   <p className="text-xl font-semibold text-ink">{site.name}</p>
