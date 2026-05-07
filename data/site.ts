@@ -1,10 +1,9 @@
 export const site = {
   name: "Suhui Wu",
-  nameZh: "武苏辉",
   title: "PhD student",
   school: "School of Geography and Ocean Science, Nanjing University",
-  schoolZh: "南京大学地理与海洋科学学院",
   email: "suhuiwu@smail.nju.edu.cn",
+  avatar: "/images/suhui-wu-profile.png",
   tagline:
     "I study polar cryosphere and hydrological remote sensing, with a focus on polar snow and ice, sea ice freeboard, sea ice thickness, satellite altimetry, and GeoAI for Earth observation.",
   researchKeywords: [
@@ -21,7 +20,7 @@ export const site = {
   links: {
     github: "#",
     googleScholar: "#",
-    researchGate: "#",
+    researchGate: "https://www.researchgate.net/profile/Suhui-Wu-2",
     orcid: "#",
   },
 };

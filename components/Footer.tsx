@@ -7,9 +7,7 @@ export function Footer() {
     <footer className="border-t border-slate-200 bg-white">
       <Container className="flex flex-col gap-4 py-8 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="font-semibold text-ink">
-            {site.name} / {site.nameZh}
-          </p>
+          <p className="font-semibold text-ink">{site.name}</p>
           <p>{site.school}</p>
         </div>
         <a

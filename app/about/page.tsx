@@ -12,7 +12,6 @@ const education = [
   {
     degree: "PhD student",
     institution: site.school,
-    institutionZh: site.schoolZh,
     note: "Researching polar cryosphere and hydrological remote sensing.",
   },
 ];
@@ -31,14 +30,26 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title={`${site.name} / ${site.nameZh}`}
+        title={site.name}
         description="I am a PhD student at the School of Geography and Ocean Science, Nanjing University, working on polar cryosphere and hydrological remote sensing."
       />
 
       <Container className="py-12 sm:py-14">
         <div className="grid gap-6 lg:grid-cols-[1fr_0.8fr]">
           <Card>
-            <h2 className="text-xl font-semibold text-ink">Profile</h2>
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+              <img
+                src={site.avatar}
+                alt="Suhui Wu profile portrait"
+                className="h-32 w-32 rounded-md border border-slate-200 object-cover object-top shadow-sm"
+              />
+              <div>
+                <h2 className="text-xl font-semibold text-ink">Profile</h2>
+                <p className="mt-2 text-sm font-medium text-ocean">
+                  PhD student · Nanjing University
+                </p>
+              </div>
+            </div>
             <p className="mt-4 leading-7 text-slate-600">
               My research interests lie at the intersection of polar science, satellite altimetry,
               hydrological remote sensing, and GeoAI. I am especially interested in how multi-source
@@ -58,7 +69,6 @@ export default function AboutPage() {
                 <div key={item.degree} className="border-l-2 border-glacier pl-4">
                   <p className="font-semibold text-ink">{item.degree}</p>
                   <p className="mt-1 text-sm text-slate-600">{item.institution}</p>
-                  <p className="text-sm text-slate-500">{item.institutionZh}</p>
                   <p className="mt-2 text-sm text-slate-600">{item.note}</p>
                 </div>
               ))}

@@ -22,9 +22,6 @@ export default function HomePage() {
             </p>
             <h1 className="text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-6xl">
               {site.name}
-              <span className="mt-3 block text-2xl font-medium text-slate-500 sm:text-3xl lg:text-4xl">
-                {site.nameZh}
-              </span>
             </h1>
             <p className="mt-6 max-w-3xl text-xl font-medium leading-8 text-ocean">
               Polar cryosphere and hydrological remote sensing
@@ -61,6 +58,17 @@ export default function HomePage() {
 
           <aside className="rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-sm">
             <div className="rounded-md border border-slate-200 bg-white p-6">
+              <div className="mb-6 flex items-center gap-4">
+                <img
+                  src={site.avatar}
+                  alt="Suhui Wu profile portrait"
+                  className="h-24 w-24 rounded-md border border-slate-200 object-cover object-top shadow-sm"
+                />
+                <div>
+                  <p className="text-lg font-semibold text-ink">{site.name}</p>
+                  <p className="mt-1 text-sm text-slate-500">PhD student</p>
+                </div>
+              </div>
               <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ocean/70">
                 Academic Profile
               </p>
@@ -70,7 +78,6 @@ export default function HomePage() {
                     Affiliation
                   </p>
                   <p className="mt-2 text-base font-semibold text-ink">{site.school}</p>
-                  <p className="mt-1 text-sm text-slate-500">{site.schoolZh}</p>
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">

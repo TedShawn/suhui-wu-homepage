@@ -50,13 +50,38 @@ export default function PublicationsPage() {
                   {publicationsByYear[year].map((publication) => (
                     <Card key={publication.title}>
                       <h3 className="text-lg font-semibold text-ink">{publication.title}</h3>
-                      {publication.authors ? <p className="mt-2 text-slate-600">{publication.authors}</p> : null}
-                      {publication.venue ? <p className="mt-1 text-sm text-slate-500">{publication.venue}</p> : null}
+                      {publication.authors ? (
+                        <p className="mt-2 text-sm leading-6 text-slate-600">{publication.authors}</p>
+                      ) : null}
+                      {publication.venue ? (
+                        <p className="mt-2 text-sm font-medium text-slate-700">{publication.venue}</p>
+                      ) : null}
                       <div className="mt-4 flex flex-wrap gap-3 text-sm font-medium text-ocean">
-                        {publication.doi ? <a href={publication.doi}>DOI</a> : null}
-                        {publication.pdf ? <a href={publication.pdf}>PDF</a> : null}
-                        {publication.code ? <a href={publication.code}>Code</a> : null}
-                        {publication.bibtex ? <a href={publication.bibtex}>BibTeX</a> : null}
+                        {publication.doi ? (
+                          <a href={publication.doi} className="hover:underline">
+                            DOI
+                          </a>
+                        ) : null}
+                        {publication.source ? (
+                          <a href={publication.source} className="hover:underline">
+                            Source
+                          </a>
+                        ) : null}
+                        {publication.pdf ? (
+                          <a href={publication.pdf} className="hover:underline">
+                            PDF
+                          </a>
+                        ) : null}
+                        {publication.code ? (
+                          <a href={publication.code} className="hover:underline">
+                            Code
+                          </a>
+                        ) : null}
+                        {publication.bibtex ? (
+                          <a href={publication.bibtex} className="hover:underline">
+                            BibTeX
+                          </a>
+                        ) : null}
                       </div>
                     </Card>
                   ))}
