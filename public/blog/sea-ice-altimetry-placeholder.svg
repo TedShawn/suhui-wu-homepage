@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Sea ice altimetry schematic</title>
+  <desc id="desc">A simple schematic showing a satellite altimeter observing sea ice freeboard above the local sea surface.</desc>
+  <rect width="960" height="420" fill="#f8fafc"/>
+  <rect y="270" width="960" height="150" fill="#dbeafe"/>
+  <path d="M0 276 C120 252 210 290 330 266 C460 240 570 286 690 260 C805 236 875 270 960 250 L960 420 L0 420 Z" fill="#bfdbfe"/>
+  <path d="M70 258 C170 242 260 264 360 252 C500 234 620 265 760 247 C835 238 900 248 960 238 L960 278 C840 294 730 284 610 300 C490 316 385 285 265 299 C170 310 90 291 0 304 L0 276 C25 270 47 263 70 258 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <line x1="500" y1="74" x2="500" y2="250" stroke="#12355b" stroke-width="4" stroke-dasharray="10 10"/>
+  <line x1="610" y1="74" x2="610" y2="270" stroke="#64748b" stroke-width="3" stroke-dasharray="8 8"/>
+  <g transform="translate(440 36)">
+    <rect x="0" y="0" width="120" height="48" rx="6" fill="#12355b"/>
+    <rect x="18" y="48" width="84" height="14" fill="#64748b"/>
+    <path d="M-72 12 L0 28 L0 38 L-72 22 Z" fill="#93c5fd"/>
+    <path d="M192 12 L120 28 L120 38 L192 22 Z" fill="#93c5fd"/>
+  </g>
+  <line x1="648" y1="260" x2="648" y2="286" stroke="#0f172a" stroke-width="3"/>
+  <line x1="635" y1="260" x2="661" y2="260" stroke="#0f172a" stroke-width="3"/>
+  <line x1="635" y1="286" x2="661" y2="286" stroke="#0f172a" stroke-width="3"/>
+  <text x="668" y="279" fill="#0f172a" font-family="Arial, sans-serif" font-size="20">freeboard</text>
+  <text x="526" y="162" fill="#12355b" font-family="Arial, sans-serif" font-size="20">altimeter range</text>
+  <text x="56" y="352" fill="#12355b" font-family="Arial, sans-serif" font-size="22">local sea surface</text>
+  <text x="72" y="232" fill="#0f172a" font-family="Arial, sans-serif" font-size="22">sea ice surface</text>
+</svg>
