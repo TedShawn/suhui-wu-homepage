@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail, MapPin } from "lucide-react";
 import { Card } from "@/components/Card";
@@ -59,9 +60,13 @@ export default function HomePage() {
           <aside className="rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-sm">
             <div className="rounded-md border border-slate-200 bg-white p-6">
               <div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-center">
-                <img
+                <Image
                   src={site.avatar}
                   alt="Suhui Wu profile portrait"
+                  width={208}
+                  height={208}
+                  priority
+                  sizes="(min-width: 640px) 208px, 176px"
                   className="h-44 w-44 rounded-md border border-slate-200 object-cover object-top shadow-sm sm:h-52 sm:w-52"
                 />
                 <div>

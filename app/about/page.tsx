@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Card } from "@/components/Card";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
@@ -38,9 +39,12 @@ export default function AboutPage() {
         <div className="grid gap-6 lg:grid-cols-[1fr_0.8fr]">
           <Card>
             <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-              <img
+              <Image
                 src={site.avatar}
                 alt="Suhui Wu profile portrait"
+                width={128}
+                height={128}
+                sizes="128px"
                 className="h-32 w-32 rounded-md border border-slate-200 object-cover object-top shadow-sm"
               />
               <div>
