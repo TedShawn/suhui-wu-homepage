@@ -39,14 +39,15 @@ export default function AboutPage() {
         <div className="grid gap-6 lg:grid-cols-[1fr_0.8fr]">
           <Card>
             <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-              <Image
-                src={site.avatar}
-                alt="Suhui Wu profile portrait"
-                width={128}
-                height={128}
-                sizes="128px"
-                className="h-32 w-32 rounded-md border border-slate-200 object-cover object-top shadow-sm"
-              />
+              <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-md border border-slate-200 bg-slate-100 shadow-sm">
+                <Image
+                  src={site.avatar}
+                  alt="Suhui Wu profile portrait"
+                  fill
+                  sizes="128px"
+                  className="object-cover object-top"
+                />
+              </div>
               <div>
                 <h2 className="text-xl font-semibold text-ink">Profile</h2>
                 <p className="mt-2 text-sm font-medium text-ocean">
