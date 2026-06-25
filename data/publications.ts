@@ -13,6 +13,16 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     year: 2026,
+    title: "Global glacier albedo changes in the 21st century revealed by MODIS and CMIP6 models",
+    authors:
+      "Yao Xiao, Chang-Qing Ke, Suhui Wu, Xiaoyi Shen, Yu Cai, Yuyue Xu, Haili Li, Vahid Nourani, Drolma Lhakpa",
+    venue: "International Journal of Digital Earth, 19(1), 2681373, 2026",
+    doi: "https://doi.org/10.1080/17538947.2026.2681373",
+    source:
+      "https://www.researchgate.net/publication/405569244_Global_glacier_albedo_changes_in_the_21st_century_revealed_by_MODIS_and_CMIP6_models",
+  },
+  {
+    year: 2026,
     title: "Strengthening influence of atmospheric rivers on global snow depth dynamics",
     authors:
       "Haili Li, Chang-Qing Ke, Xiaoyi Shen, Suhui Wu, Qinghui Zhu, Yu Cai, Yao Xiao, Deliang Chen, Xixi Lu, Zheng Duan, Liyin He, Yuyue Xu",
