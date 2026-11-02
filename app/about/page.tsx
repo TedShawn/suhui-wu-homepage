@@ -32,7 +32,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title={site.name}
-        description="I am a PhD student at the School of Geography and Ocean Science, Nanjing University, working on polar cryosphere and hydrological remote sensing."
+        description="I am a PhD student at Nanjing University, studying Antarctic sea-ice height and freeboard using SWOT Ka-band interferometry and ICESat-2, alongside broader research on polar cryosphere and hydrological remote sensing."
       />
 
       <Container className="py-12 sm:py-14">
@@ -56,10 +56,12 @@ export default function AboutPage() {
               </div>
             </div>
             <p className="mt-4 leading-7 text-slate-600">
-              My research interests lie at the intersection of polar science, satellite altimetry,
-              hydrological remote sensing, and GeoAI. I am especially interested in how multi-source
-              satellite observations can improve our understanding of snow and ice processes, sea ice
-              freeboard and thickness, and water-level variations in cold-region environments.
+              My research focuses on satellite altimetry of polar sea ice and inland waters.
+              My 2026 first-author paper in IEEE JSTARS investigates wide-swath mapping
+              of Antarctic sea-ice height and freeboard using SWOT Ka-band interferometry,
+              with comparisons against ICESat-2 observations. My broader interests include
+              sea-ice snow depth and thickness retrieval, multi-sensor data integration,
+              and water-level monitoring in high-altitude environments.
             </p>
             <p className="mt-4 leading-7 text-slate-600">
               This website serves as a compact academic homepage and research blog for sharing

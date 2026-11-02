@@ -23,7 +23,7 @@ export default function PublicationsPage() {
       <PageHero
         eyebrow="Publications"
         title="Selected Publications"
-        description="Publication records are intentionally left as structured placeholders until confirmed bibliographic information is available."
+        description={`${publications.length} publication records, including journal articles and preprints, covering polar sea ice, satellite altimetry, and hydrological remote sensing.`}
       />
 
       <Container className="py-12 sm:py-14">
