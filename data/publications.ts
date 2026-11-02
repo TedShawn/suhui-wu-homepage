@@ -13,6 +13,16 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     year: 2026,
+    title:
+      "Wide-swath mapping of Antarctic sea-ice height and freeboard from SWOT Ka-band interferometry: comparison using ICESat-2",
+    authors:
+      "Suhui Wu, Zhaoqing Dong, Michel Tsamados, Rosemary C. Willatt, Yao Xiao, Xiaoyi Shen, Haili Li, Hoonyol Lee, Sergey V. Popov, Chang-Qing Ke",
+    venue:
+      "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 19, 32098-32116, 2026",
+    doi: "https://doi.org/10.1109/JSTARS.2026.3733216",
+  },
+  {
+    year: 2026,
     title: "Global glacier albedo changes in the 21st century revealed by MODIS and CMIP6 models",
     authors:
       "Yao Xiao, Chang-Qing Ke, Suhui Wu, Xiaoyi Shen, Yu Cai, Yuyue Xu, Haili Li, Vahid Nourani, Drolma Lhakpa",
